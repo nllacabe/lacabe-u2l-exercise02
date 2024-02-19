@@ -1,0 +1,125 @@
+
+/* base styles */
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-height: calc(100vh - 200px);
+}
+
+.flex-item {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+    position: relative; 
+}
+
+.nested-flex-container1 {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.nested-flex-container2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.nested-flex-item {
+    flex: 0 0 30%;
+    background-color: #ffd0e2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative; 
+}
+
+.featured-photo img {
+    border-radius: 50%;
+}
+
+.featured-photo {
+    background-color: transparent;
+}
+
+.image-overlay1 {
+    position: absolute;
+    bottom: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px; 
+    height: 70px;
+    background-color: transparent;
+    border-radius: 50%; 
+}
+
+.image-overlay2 {
+    position: absolute;
+    bottom: 83%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px; 
+    height: 70px; 
+    background-color: transparent; 
+    border-radius: 50%; 
+}
+
+.image-overlay1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.image-overlay-fp {
+    position: absolute;
+    bottom: 92%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px; 
+    height: 70px; 
+    background-color: transparent; 
+    border-radius: 50%; 
+}
+
+/* properties for overlay images */
+.image-overlay-fp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* font for specific elements only */
+.flex-item p,
+.flex-item h2,
+.nested-flex-item p {
+    font-family: "Times New Roman", Times, serif;
+}
